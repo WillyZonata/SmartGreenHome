@@ -1,0 +1,81 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(#4facfe, #00f2fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#loginForm, #dashboard {
+  width: 350px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+h2, h1 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.card {
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #f6f9ff;
+  border-radius: 10px;
+  border-left: 6px solid #007bff;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  background: #e9f3ff;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0,123,255,0.4);
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 12px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0056cc;
+  cursor: pointer;
+}
+
+span {
+  font-size: 14px;
+  color: #444;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
